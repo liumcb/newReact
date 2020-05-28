@@ -2,6 +2,3 @@
 node_modules/
 # 打包目录
 dist/
-
-.vscode
-

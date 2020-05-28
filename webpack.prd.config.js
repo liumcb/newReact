@@ -2,7 +2,6 @@ var path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -42,7 +41,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Main文件',
             filename:'index.html',
-            template: './app/template.html'
+            template: './template.html'
         }),// 重新构建html模板
         new CleanWebpackPlugin(), // 自动删除webpack里的打包的目录
         new UglifyJSPlugin()   // 用来对js文件进行压缩，从而减小js文件的大小，加速load速度
