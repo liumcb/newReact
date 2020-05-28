@@ -1,0 +1,7 @@
+# 忽略上传到GitHub上面的内容
+node_modules/
+# 打包目录
+dist/
+
+.vscode
+
