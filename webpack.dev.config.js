@@ -45,7 +45,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'index文件',
             filename:'index.html',
-            template: './app/template.html'
+            template: './template.html'
         }),// 重新构建html模板
         new CleanWebpackPlugin()
     ]
